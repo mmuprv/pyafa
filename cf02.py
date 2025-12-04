@@ -13,10 +13,10 @@ KEYWORDSB = {
 }
 # no go
 KEYWORDSR = {
-  'O365','Office365','hpc','hpe','aruba','active directory','administra','android','ansible','atlassian','azure','avamar','virus','backup','bsi','c#','c++','cisco','citrix','commvault','compliance','confluence','container','css','cms','datacore','datensicherung','datenbank','devops',
+  'O365','Office365','hpc','hpe','aruba','active directory','administra','android','ansible','atlassian','azure','avamar','virus','backup','c#','c++','cisco','citrix','commvault','compliance','confluence','container','css','cms','datacore','datensicherung','datenbank','devops',
   'disposition','documentum','docker',
 'domain','dsgvo','einkäufer','elektriker','elektroniker','entwickler','entra','exchange','erp','firewall','governance','gpo','gruppenrichtlinien','helpdesk','horizon','hitachi','kanban','kaufmann','kpi','kubernetes','itil',
-'ios','iso27','iso 27','java','jira','mdm','m365',
+'ios','java','jira','mdm','m365',
 'mechatronik','networker','nimble','normen','nutanix',
 'object-storage','oracle','outlook','php','projektmanager','pure','bereitschaft','rubrik',
 'sap','sales','sccm','security','servicetechniker','sharepoint','synergy',

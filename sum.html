@@ -1,0 +1,307 @@
+<!DOCTYPE html><html><body><h1>Afa Jobs</h1>
+<script>
+var jobmap = {};
+//JSON.parse('{  "s": "ttttt",  "a": "bbbb",  "c": "ddd"}');
+// var jobmap = { "s":"ttttt", "a":"bbbb" ,c:"ddd"};
+
+function bclick(key,val) {
+  // jobmap.set(key,val);
+  Object.defineProperty(jobmap, key, {value:val,writable:true,configurable:true,enumerable:true});
+  //alert(key+":"+val);
+}
+
+function export2txt() {
+
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(jobmap, null, 2)], {
+    type: "text/plain"
+  }));
+  a.setAttribute("download", "pyafaadd.json");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function show() {
+  let text = typeof(jobmap)+"= "+ Object.isExtensible(jobmap)+Object.isSealed(jobmap)+Object.isFrozen(jobmap);
+  for (const x in jobmap) {
+    text += x+":"+jobmap[x] + ", ";
+  };
+  alert(text+"...."+JSON.stringify(jobmap, null, 2));
+}
+
+</script>
+<button onclick="export2txt()">Export Data to local ~/Downloads/pyafaadd.json file</button><button onclick="show()">ShowExport Data</button><hr><hr>
+<!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">EMC</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Dell</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 1,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Compellent</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Fibre</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Fiber</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Netapp</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', '<span style="background-color:lime;">Storage</span>'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 5,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'SAN'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 1,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'Systemarchitekt'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'Systemanalytiker'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'Systemberater'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'IT-Systemberater'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 0,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'IT-Berater'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 20,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'IT-Consultant'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 24,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'IT-'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 283,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html><!DOCTYPE html><html><body><h2><hr><hr>(('angebotsart', '1'),
+ ('page', '1'),
+ ('pav', 'false'),
+ ('zeitarbeit', 'false'),
+ ('size', '250'),
+ ('umkreis', '12'),
+ ('externestellenboersen', 'false'),
+ ('facetten', 'false'),
+ ('sort', 'moddatum'),
+ ('was', 'EDV-'),
+ ('wo', '44577'))
+</h2><h3>{'maxErgebnisse': 146,
+ 'page': 1,
+ 'size': 250,
+ 'woOutput': {'bereinigterOrt': '44577',
+              'suchmodus': 'UMKREISSUCHE',
+              'koordinaten': [{'lat': 51.5668577, 'lon': 7.3306736}]}}
+</h3><hr><hr></body></html>-dummy-=1  <br><span style="background-color:lime;">emc</span>=1  <br><span style="background-color:lime;">dell</span>=1  <br><span style="background-color:lime;">compellent</span>=1  <br><span style="background-color:lime;">fibre</span>=1  <br><span style="background-color:lime;">fiber</span>=1  <br><span style="background-color:lime;">netapp</span>=1  <br><span style="background-color:lime;">storage</span>=1  <br>

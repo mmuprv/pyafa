@@ -58,10 +58,10 @@ def stellen(liste):
 
 		print("------------------------------------------------")
 		print(x["referenznummer"], x['aenderungsdatum'],  x["hauptberuf"], x["alleBerufe"], x["firma"],flag)
-#		if flag != "all":
+		if flag != "all":
 #		if flag == "-none-":
 #      if flag == "-none-" or flag == "running":
-		if flag != "wrong" and flag != "noqual":
+#		if flag != "wrong" and flag != "noqual":
 			if showheader == False:
 				with open("h.html", "a") as f:
 					f.write("<!DOCTYPE html><html><body><hr><hr><h1>"+x['referenznummer']+"   "+x['aenderungsdatum']+" "+x['hauptberuf']+" "+x['firma']+"<br>")	
@@ -74,7 +74,6 @@ def stellen(liste):
 					f.write('<button onclick=\'bclick("'+ref+'","closedqual")\'>Closed noQual</button>\n')
 					f.write('<button onclick=\'bclick("'+ref+'","closedmoney")\'>Closed Money!</button>\n')
 					f.write('<button onclick=\'bclick("'+ref+'","running")\'>Still running</button>\n')
-					f.write('<button onclick=\'bclick("'+ref+'","doit")\'>Contact!!!</button>\n')
 					f.write("</h1><hr></body></html>\n")	
 
 			jresponse = requests.get('https://rest.arbeitsagentur.de/vermittlung/ag-darstellung-service/pc/v1/arbeitgeberdarstellung/'+x['arbeitgeberKundennummerHash'], headers=headers, params=params, verify=True)
@@ -100,7 +99,7 @@ def search(what, where):
 		('zeitarbeit', 'false'),
 		('size', '250'),
 # max 200km
-		('umkreis', '50'),
+		('umkreis', '12'),
 # min tage in db?
 #		('veroeffentlichtseit', '99'),
 # max tage
@@ -230,8 +229,8 @@ result = search("IT-Systemberater", "44577")
 result = search("IT-Berater", "44577")
 result = search("IT-Consultant", "44577")
 
-#result = search("IT-", "44577")
-#result = search("EDV-", "44577")
+result = search("IT-", "44577")
+result = search("EDV-", "44577")
 
 print(subprocess.check_output("python3 cf02.py", shell=True))
 sys.exit()
